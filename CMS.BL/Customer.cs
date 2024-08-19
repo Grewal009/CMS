@@ -5,14 +5,27 @@ namespace CMS.BL;
 public class Customer
 {
     public int CustomerId { get; private set; }
-    public string FirstNane { get; set; }
+    public string FirstName { get; set; }
     public string LastName { get; set; }
-    public string FullName {
+
+    public static int InstanceCount { get; set; }
+
+    public string FullName
+    {
         get
         {
-            return LastName + ", " + FirstNane;
+            string fullName = LastName;
+            if (!string.IsNullOrWhiteSpace(FirstName))
+            {
+                if (!string.IsNullOrWhiteSpace(fullName))
+                {
+                    fullName += ", ";
+                }
+
+                fullName += FirstName;
+            }
+
+            return fullName;
         }
     }
-    
-    
 }
