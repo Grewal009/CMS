@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMS.BL", "CMS.BL\CMS.BL.csproj", "{D5A2E7B3-4B55-4DA6-A07D-93A22089FDE9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{CABDC11B-E811-4D39-83E1-02DCF5FEDCD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMS.BLTest", "Tests\CMS.BLTest\CMS.BLTest.csproj", "{F94440C8-ADD8-4299-8F19-CA0528BADD6C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,12 @@ Global
 		{D5A2E7B3-4B55-4DA6-A07D-93A22089FDE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5A2E7B3-4B55-4DA6-A07D-93A22089FDE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5A2E7B3-4B55-4DA6-A07D-93A22089FDE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F94440C8-ADD8-4299-8F19-CA0528BADD6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F94440C8-ADD8-4299-8F19-CA0528BADD6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F94440C8-ADD8-4299-8F19-CA0528BADD6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F94440C8-ADD8-4299-8F19-CA0528BADD6C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F94440C8-ADD8-4299-8F19-CA0528BADD6C} = {CABDC11B-E811-4D39-83E1-02DCF5FEDCD6}
 	EndGlobalSection
 EndGlobal
