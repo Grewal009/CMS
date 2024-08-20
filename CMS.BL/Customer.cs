@@ -10,7 +10,9 @@ public class Customer
     public string EmailAddress { get; set; }
     public static int InstanceCount { get; set; }
 
-    public Customer()
+    public List<Address> AddressList { get; set; }
+
+    public Customer():this(0)
     {
         
     }
@@ -18,6 +20,7 @@ public class Customer
     public Customer(int customerId)
     {
         CustomerId = customerId;
+        AddressList = new List<Address>();
     }
 
     public string FullName
