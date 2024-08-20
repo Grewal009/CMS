@@ -1,5 +1,4 @@
 using CMS.BL;
-using NUnit.Framework.Internal;
 
 namespace CMS.BLTest;
 
@@ -78,6 +77,42 @@ public class CustomerTest
 
         //Assert
         Assert.That(expected, Is.EqualTo(actual));
+    }
+
+    [Test]
+    public void ValidateTest()
+    {
+        //Arrange
+        Customer customer = new Customer
+        {
+            LastName = "Sam",
+            EmailAddress = "sam@gmail.com"
+        };
+        var expected = true;
         
+        //Act
+        var actual = customer.Validate();
+
+        //Assert
+        Assert.That(expected,Is.EqualTo(actual));
+    }
+
+    [Test]
+    public void ValidateMissingLastName()
+    {
+        //Arrange
+        var customer = new Customer
+        {
+            EmailAddress = "sam@gmail.com"
+        };
+        var expected = false;
+        
+        //Act
+        var actual = customer.Validate();
+
+        //Assert
+        Assert.That(expected,Is.EqualTo(actual));
+
+
     }
 }
