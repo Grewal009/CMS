@@ -10,6 +10,16 @@ public class Customer
     public string EmailAddress { get; set; }
     public static int InstanceCount { get; set; }
 
+    public Customer()
+    {
+        
+    }
+
+    public Customer(int customerId)
+    {
+        CustomerId = customerId;
+    }
+
     public string FullName
     {
         get
