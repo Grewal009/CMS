@@ -16,18 +16,6 @@ public class Product
         ProductId = productId;
     }
 
-    //Retrieve one product
-    public Product Retrieve(int productId)
-    {
-        return new Product();
-    }
-
-    //Save the current product
-    public bool Save()
-    {
-        return true;
-    }
-
     //Validate the product data
     public bool Validate()
     {
